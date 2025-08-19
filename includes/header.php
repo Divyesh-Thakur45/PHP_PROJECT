@@ -27,7 +27,7 @@
         <div class="container">
             <div class="main-bar-content">
                 <div class="logo-section">
-                    <a href="/" class="logo">
+                    <a href="/PHP_PROJECT" class="logo">
                         <img src="https://static.lenskart.com/media/desktop/img/site-images/main_logo.svg" alt="Lenskart Logo">
                     </a>
                     <span class="phone-number">
@@ -46,9 +46,9 @@
                 </div>
 
                 <div class="account-links">
-                    <a href="#" class="account-link">
-                        <i class="fas fa-truck"></i>
-                        Track Order
+                    <a href="#" class="account-link" id="signUpBtn">
+                        <i class="fas fa-user-plus"></i>
+                        Sign up
                     </a>
                     <a href="#" class="account-link" id="signInBtn">
                         <i class="fas fa-user"></i>
@@ -58,7 +58,7 @@
                         <i class="fas fa-heart"></i>
                         Wishlist
                     </a>
-                    <a href="/cart" class="account-link cart-link">
+                    <a href="/PHP_PROJECT/controllers/cart.php" class="account-link cart-link">
                         <i class="fas fa-shopping-cart"></i>
                         Cart
                         <span class="cart-count">0</span>
@@ -73,13 +73,13 @@
         <div class="container">
             <div class="bottom-bar-content">
                 <nav class="main-navigation">
-                    <a href="/eyeglasses" class="nav-link">EYEGLASSES</a>
-                    <a href="/screen-glasses" class="nav-link">SCREEN GLASSES</a>
-                    <a href="/kids-glasses" class="nav-link">KIDS GLASSES</a>
-                    <a href="/contact-lenses" class="nav-link">CONTACT LENSES</a>
-                    <a href="/sunglasses" class="nav-link">SUNGLASSES</a>
-                    <a href="/home-eye-test" class="nav-link">HOME EYE-TEST</a>
-                    <a href="/store-locator" class="nav-link">STORE LOCATOR</a>
+                    <a href="/PHP_PROJECT/pages/eyeglasses.php" class="nav-link">EYEGLASSES</a>
+                    <a href="/PHP_PROJECT/pages/notfound.php" class="nav-link">SCREEN GLASSES</a>
+                    <a href="/PHP_PROJECT/pages/notfound.php" class="nav-link">KIDS GLASSES</a>
+                    <a href="/PHP_PROJECT/pages/notfound.php" class="nav-link">CONTACT LENSES</a>
+                    <a href="/PHP_PROJECT/pages/notfound.php" class="nav-link">SUNGLASSES</a>
+                    <a href="/PHP_PROJECT/pages/notfound.php" class="nav-link">HOME EYE-TEST</a>
+                    <a href="/PHP_PROJECT/pages/notfound.php" class="nav-link">STORE LOCATOR</a>
                 </nav>
 
                 <div class="brand-logos">
@@ -114,6 +114,27 @@
                 <input type="password" placeholder="Password" required>
             </div>
             <button type="submit" class="btn btn-primary">Sign In</button>
+        </form>
+    </div>
+</div>
+
+
+<!-- Sign up Modal -->
+<div id="signUpModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeSignUp">&times;</span>
+        <h2>Sign Up</h2>
+        <form class="signup-form">
+            <div class="form-group">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Confirm Password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
         </form>
     </div>
 </div>
